@@ -1,0 +1,42 @@
+.app {
+  /* background-size: cover; */
+  background-position: center;
+  /* background-repeat: no-repeat; */
+  background-attachment: fixed; 
+  /* This keeps the background fixed while scrolling. */
+  /* Add other styles as needed for the content container */
+  /* padding: 50%; */
+  /* display: flex; */
+  /* flex-wrap: wrap; */
+  /* justify-content: space-between; */
+}
+.headertext {
+  font-size: large;
+  color: azure;
+}
+
+.vertical-card-view {
+  display: flex; /* Make the cards display in a vertical column */
+  flex-direction: row;
+  padding: 10px; /* Add padding between cards */
+  /* width: 80%; */
+  overflow-y: auto;
+  cursor: pointer;
+}
+
+.card {
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  padding: 20px;
+  margin-bottom: 10px; /* Add margin between cards */
+  background-color: rgb(57, 148, 125);
+  margin: 5px
+}
+
+.green-card {
+  background-color: red;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  padding: 10px;
+  margin-bottom: 10px; /* Add margin between cards */
+}

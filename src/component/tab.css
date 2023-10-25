@@ -1,0 +1,43 @@
+.tab-view-container {
+  width: 100%;
+  height: 100vh; /* Full viewport height */
+  background: #f0f0f0;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  display: flex;
+  flex-direction: column;
+}
+
+.tabs {
+  display: flex;
+  justify-content: space-between;
+  background: #333;
+  color: #fff;
+}
+
+.tab {
+  padding: 10px 20px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.tab.active {
+  background: #555;
+}
+
+.tab-content {
+  background: #fff;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-top: none;
+  flex: 1; /* Take remaining vertical space */
+  overflow: auto; /* Add scrolling if content overflows */
+}
+
+.tab-pane {
+  display: none;
+}
+
+.tab-pane.active {
+  display: block;
+}
