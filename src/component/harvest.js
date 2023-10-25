@@ -65,6 +65,7 @@ const CustomTable = () => {
     }, []);
   return (
     <ThemeProvider theme={theme}> {/* Wrap your component with ThemeProvider */}
+        <h2 className="location-title">Бөглөх хуудасны бункерийн бүртгэл болон пүүний бүртгэл читоноор холбогдсон бичилтүүд харагдана</h2>
         <TableContainer component={Paper}>
         <Table>
             <StyledTableHead>
