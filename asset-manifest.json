@@ -1,16 +1,16 @@
 {
   "files": {
-    "main.css": "/static/css/main.b50f92d4.css",
-    "main.js": "/static/js/main.7453040e.js",
-    "static/js/651.45e8f693.chunk.js": "/static/js/651.45e8f693.chunk.js",
-    "static/media/back.png": "/static/media/back.f99f48b2b03edb310343.png",
-    "index.html": "/index.html",
-    "main.b50f92d4.css.map": "/static/css/main.b50f92d4.css.map",
-    "main.7453040e.js.map": "/static/js/main.7453040e.js.map",
-    "651.45e8f693.chunk.js.map": "/static/js/651.45e8f693.chunk.js.map"
+    "main.css": "/warehouse-card-view/static/css/main.b50f92d4.css",
+    "main.js": "/warehouse-card-view/static/js/main.884f9736.js",
+    "static/js/651.45e8f693.chunk.js": "/warehouse-card-view/static/js/651.45e8f693.chunk.js",
+    "static/media/back.png": "/warehouse-card-view/static/media/back.f99f48b2b03edb310343.png",
+    "index.html": "/warehouse-card-view/index.html",
+    "main.b50f92d4.css.map": "/warehouse-card-view/static/css/main.b50f92d4.css.map",
+    "main.884f9736.js.map": "/warehouse-card-view/static/js/main.884f9736.js.map",
+    "651.45e8f693.chunk.js.map": "/warehouse-card-view/static/js/651.45e8f693.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.b50f92d4.css",
-    "static/js/main.7453040e.js"
+    "static/js/main.884f9736.js"
   ]
 }
