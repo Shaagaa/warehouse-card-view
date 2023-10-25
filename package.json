@@ -28,7 +28,7 @@
   },
   "homepage": "https://shaagaa.github.io/warehouse-card-view",
   "scripts": {
-    "start": "react-scripts start",
+    "start": "react-scripts start --port 8018",
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
