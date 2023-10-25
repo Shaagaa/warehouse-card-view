@@ -53,7 +53,7 @@ const CustomTable = () => {
     useEffect(() => {
         async function fetchData() {
             try {
-            const url = 'http://192.168.0.235:8017/api/v1/harvest/harvest';
+            const url = 'http://127.0.0.1:8017/api/v1/harvest/harvest';
             const response = await axios.post(url);
             console.log('Response Data:', response.data.result);
             setData(response.data.result)

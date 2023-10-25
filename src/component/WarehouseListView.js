@@ -43,7 +43,7 @@ function WarehouseListView() {
     console.log(`Count: ${count}`);
     async function fetchData() {
       try {
-        const url = 'http://192.168.0.235:8017/api/v1/angor';
+        const url = 'http://127.0.0.1:8017/api/v1/angor';
         const response = await axios.post(url);
         console.log('Response Data:', response.data.result);
         setWarehouses(response.data.result)
