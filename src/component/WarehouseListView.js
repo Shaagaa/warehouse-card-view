@@ -37,10 +37,8 @@ const containerStyle = {
 function WarehouseListView() {
   const [selectedCard, setSelectedCard] = useState(null);
   const [warehouses, setWarehouses] = useState([])
-  const [count, setCount] = useState(0);
 
   useEffect(() => {
-    console.log(`Count: ${count}`);
     async function fetchData() {
       try {
         const url = 'http://192.168.0.235:8017/api/v1/angor';
@@ -52,7 +50,7 @@ function WarehouseListView() {
       }
     }
     fetchData();
-  }, [count]); // This effect will run whenever 'count' changes
+  }, []); // This effect will run whenever 'count' changes
 
   // fetchData();
   

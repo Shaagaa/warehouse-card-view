@@ -16,36 +16,6 @@ const StyledTableHead = styled(TableHead)(({ theme }) => ({
   color: theme.palette.primary.contrastText,
 }));
 
-
-
-const yourData = [
-    {
-      field1: 'Value1.1',
-      field2: 'Value1.2',
-      field3: 'Value1.3',
-      field4: 'Value1.4',
-      field5: 'Value1.5',
-      field6: 'Value1.6',
-      field7: 'Value1.7',
-      field8: 'Value1.8',
-      field9: 'Value1.9',
-      field10: 'Value1.10',
-    },
-    {
-      field1: 'Value2.1',
-      field2: 'Value2.2',
-      field3: 'Value2.3',
-      field4: 'Value2.4',
-      field5: 'Value2.5',
-      field6: 'Value2.6',
-      field7: 'Value2.7',
-      field8: 'Value2.8',
-      field9: 'Value2.9',
-      field10: 'Value2.10',
-    },
-    // Add more data objects as needed
-  ];
-
 const CustomTable = () => {
 
     const [data, setData] = useState([])
