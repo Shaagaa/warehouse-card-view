@@ -39,7 +39,7 @@ function WarehouseListView() {
   const [warehouses, setWarehouses] = useState([])
 
   useEffect(() => {
-    async function fetchData() {
+    async function fetchDataInternal() {
       try {
         const url = 'http://192.168.0.235:8017/api/v1/angor';
         const response = await axios.post(url);
@@ -49,10 +49,19 @@ function WarehouseListView() {
         console.error('Error:', error);
       }
     }
-    fetchData();
-  }, []); // This effect will run whenever 'count' changes
-
-  // fetchData();
+    async function fetchDataExternal() {
+      try {
+        const url = 'http://202.131.226.117:8017/api/v1/angor';
+        const response = await axios.post(url);
+        console.log('Response Data:', response.data.result);
+        setWarehouses(response.data.result)
+      } catch (error) {
+        console.error('Error:', error);
+      }
+    }
+    fetchDataInternal();
+    fetchDataExternal();
+  }, []);
   
   const groupedWarehouses = warehouses.reduce((groups, warehouse) => {
     const location = warehouse.branch_type;

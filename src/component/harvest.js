@@ -21,7 +21,7 @@ const CustomTable = () => {
     const [data, setData] = useState([])
 
     useEffect(() => {
-        async function fetchData() {
+        async function fetchDataInternal() {
             try {
             const url = 'http://192.168.0.235:8017/api/v1/harvest/harvest';
             const response = await axios.post(url);
@@ -31,7 +31,18 @@ const CustomTable = () => {
             console.error('Error:', error);
             }
         }
-        fetchData();
+        async function fetchDataExternal() {
+          try {
+          const url = 'http://202.131.226.117:8017/api/v1/harvest/harvest';
+          const response = await axios.post(url);
+          console.log('Response Data:', response.data.result);
+          setData(response.data.result)
+          } catch (error) {
+          console.error('Error:', error);
+          }
+      }
+      fetchDataInternal();
+      fetchDataExternal();
     }, []);
   return (
     <ThemeProvider theme={theme}> {/* Wrap your component with ThemeProvider */}
