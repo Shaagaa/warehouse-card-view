@@ -3,6 +3,8 @@ import './tab.css'; // Import your CSS file for styling
 import WarehouseListView from './WarehouseListView';
 import CustomTable from './harvest';
 
+import Map from './map';
+
 
 
 function TabView() {
@@ -10,6 +12,7 @@ function TabView() {
     { id: 'tab1', label: 'Ангорууд', content: 'Агуулахууд' },
     { id: 'tab2', label: 'Ургац хураалт', content: 'Хайх' },
     { id: 'tab3', label: 'Өртөг', content: 'Хайх' },
+    { id: 'tab4', label: 'Газрын зураг', content: 'Хайх' },
   ];
 
   const [activeTab, setActiveTab] = useState(tabs[0].id);
@@ -34,21 +37,29 @@ function TabView() {
       <div className="tab-content">
         {tabs.map((tab) => (
           <div
-            key={tab.id}
-            className={`tab-pane ${activeTab === tab.id ? 'active' : ''}`}
-          >
-            {tab.id === 'tab1' ? (
-              <div>
-                <WarehouseListView/>
-              </div>
-            ) : tab.id === 'tab2' ? ( // Add a condition for tab2
-              <div>
-                <CustomTable/>
-              </div>
-            ) : (
-              tab.content
-            )}
-          </div>
+          key={tab.id}
+          className={`tab-pane ${activeTab === tab.id ? 'active' : ''}`}
+        >
+          {tab.id === 'tab1' ? (
+            <div>
+              <WarehouseListView/>
+            </div>
+          ) : tab.id === 'tab2' ? (
+            <div>
+              <CustomTable/>
+            </div>
+          ) : tab.id === 'tab3' ? (
+            <div>
+              {/* Render content for tab3 */}
+            </div>
+          ) : tab.id === 'tab4' ? (
+            <div>
+              <Map/>
+            </div>
+          ) : (
+            tab.content
+          )}
+        </div>
         ))}
 </div>
     </div>
